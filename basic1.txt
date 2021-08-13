@@ -2,9 +2,9 @@
 git rm *.txt
 git init
 git add *
-
 git status
 git commit -m "Arquivos de teste excluidos"
+git push
 
 --Recupera arquivos apagados do diretório
 git log --diff-filter=D --summary
