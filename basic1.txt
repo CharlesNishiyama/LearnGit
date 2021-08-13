@@ -12,3 +12,29 @@ git checkout 4letras~1 nomearq.txt
 
 
 git commit -a -m "Arquivos Recuperados"
+
+
+--Resolver erro de diretório e arquivos apagados no pc local e no git
+--Erro 
+
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/CharlesNishiyama/LearnPython.git
+
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+--Solução
+git credential-manager uninstall
+git credential-manager install
+
+Because you probably did not identify the remote git repository to your terminal first.
+git remote set-url origin https://github.com/MyRepo/project.git
+
+and then,
+
+git add .
+git commit -m "initial commit"
+git push origin master
