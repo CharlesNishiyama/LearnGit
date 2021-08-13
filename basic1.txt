@@ -1,0 +1,14 @@
+--Apagar arquivos do diretório
+git rm *.txt
+git init
+git add *
+
+git status
+git commit -m "Arquivos de teste excluidos"
+
+--Recupera arquivos apagados do diretório
+git log --diff-filter=D --summary
+git checkout 4letras~1 nomearq.txt
+
+
+git commit -a -m "Arquivos Recuperados"
