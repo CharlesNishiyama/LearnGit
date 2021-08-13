@@ -1,7 +1,7 @@
 --Apagar arquivos do diretório
 git rm *.txt
 git init
-git add *
+git add basic1.txt
 git status
 git commit -m "Arquivos de teste excluidos"
 git push
